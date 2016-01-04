@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.version         = '1.0.0'
   s.authors         = ['Yaroslav Konoplov']
   s.email           = ['yaroslav@inbox.com']
-  s.summary         = 'essay-paranoia'
-  s.description     = 'essay-paranoia'
+  s.summary         = 'Essay writer for paranoia'
+  s.description     = 'Essay writer for paranoia'
   s.homepage        = 'http://github.com/yivo/essay-paranoia'
   s.license         = 'MIT'
 
@@ -14,5 +14,7 @@ Gem::Specification.new do |s|
   s.test_files      = `git ls-files -z -- {test,spec,features}/*`.split("\x0")
   s.require_paths   = ['lib']
 
-  # TODO Add essay dependency
+  s.add_dependency 'activesupport', '>= 3.2.0'
+  s.add_dependency 'activerecord', '>= 3.2.0'
+  s.add_dependency 'essay', '~> 1.0.0'
 end
