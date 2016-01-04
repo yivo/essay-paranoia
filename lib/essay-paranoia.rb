@@ -11,7 +11,7 @@ module Essay
     end
   end
 
-  class AttributeRoles
+  class AttributeFeatures
     def paranoia_timestamp?
       model_class.try(:paranoia_column).try(:to_s) == attribute_name.to_s
     end
