@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |s|
   s.name            = 'essay-paranoia'
-  s.version         = '1.0.1'
+  s.version         = '1.0.2'
   s.authors         = ['Yaroslav Konoplov']
   s.email           = ['eahome00@gmail.com']
   s.summary         = 'Essay writer for paranoia'
