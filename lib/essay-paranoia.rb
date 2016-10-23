@@ -7,7 +7,7 @@ require 'essay'
 module Essay
   class ModelFeatures
     def paranoid?
-      model_class.respond_to?(:paranoia_column)
+      active_record.respond_to?(:paranoia_column)
     end
 
     serialize do
@@ -17,7 +17,7 @@ module Essay
 
   class AttributeFeatures
     def paranoia_timestamp?
-      model_class.try(:paranoia_column).try(:to_s) == attribute_name.to_s
+      active_record.try(:paranoia_column).try(:to_sym) == attribute.name
     end
 
     serialize do
